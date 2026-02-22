@@ -1,21 +1,50 @@
-.gradle
-**/build/
-!**/src/**/build/
+# gradle
 
-# Ignore Gradle GUI config
-gradle-app.setting
+.gradle/
+build/
+out/
+classes/
+!gradle/wrapper/gradle-wrapper.jar
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# --- Fabric Loom ---
+# This folder contains remapped Minecraft jars (several hundred MBs)
+.fabric-loom/
 
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+# eclipse
 
-# Cache of project
-.gradletasknamecache
+*.launch
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
 .classpath
+.project
+
+# OS
+
+*.DS_Store
+Thumbs.db
+
+# fabric
+
+run/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# --- Log files ---
+run/
+logs/
